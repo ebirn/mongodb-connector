@@ -1,0 +1,3 @@
+*.class
+adapter/target
+api/target
