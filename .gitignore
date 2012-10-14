@@ -1,3 +1,4 @@
 *.class
 adapter/target
 api/target
+demoapp/target
