@@ -2,7 +2,7 @@
 # Mongo DB resource connector
 
 A primitive MongoDB connector, JCA 1.6 compliant
-Inspired by this tutorial by Adam Bien: http://www.adam-bien.com/roller/abien/entry/project_connectorz_jca_1_6
+Inspired by this tutorial by Adam Bien: http://www.adam-bien.com/roller/abien/entry/an_article_about_java_ee 
 
 ## Modules:
 ### connector

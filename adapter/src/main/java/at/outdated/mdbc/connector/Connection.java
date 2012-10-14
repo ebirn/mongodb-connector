@@ -52,30 +52,27 @@ public class Connection implements ManagedConnection {
 
     @Override
     public void cleanup() {
-        log.fine("#Connection.cleanup");
+        log.fine("cleanup");
     }
 
     @Override
     public void associateConnection(Object connection) {
-        log.fine("#Connection.associateConnection " + connection);
+        log.fine("associateConnection " + connection);
         this.mongoConnection = (JCAMongoConnection) connection;
     }
 
     @Override
     public void addConnectionEventListener(ConnectionEventListener listener) {
-        log.fine("#Connection.addConnectionEventListener");
         this.listeners.add(listener);
     }
 
     @Override
     public void removeConnectionEventListener(ConnectionEventListener listener) {
-        log.fine("#Connection.removeConnectionEventListener");
         this.listeners.remove(listener);
     }
 
     @Override
     public XAResource getXAResource() throws ResourceException {
-        log.fine("#Connection.getXAResource");
         return null;
     }
 
@@ -84,7 +81,7 @@ public class Connection implements ManagedConnection {
     @Override
     public ManagedConnectionMetaData getMetaData() throws ResourceException {
         
-        log.fine("#Connection.getMetaData");
+        log.fine("getMetaData");
         return new ManagedConnectionMetaData() {
 
             public String getEISProductName() throws ResourceException {
